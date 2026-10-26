@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2026-10-26
+  Features:
+    - Allow vanilla underground belts and pipe-to-ground connections to cross empty-space gaps on space platforms.
+    - Preserve original distance and speed fields, lava restrictions, and endpoint placement collision data.
+  Changes:
+    - Prepare the first public release with the same Lua implementation as the GitHub beta.
+    - Record the user's confirmation of general functionality on Factorio 2.0.77 with Space Age.
+    - Keep detailed lava, range, throughput, all-tier, endpoint-placement, and save/reload checks pending specific evidence.

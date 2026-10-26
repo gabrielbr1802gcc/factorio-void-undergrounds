@@ -1,0 +1,11 @@
+{
+  "mod": "void-undergrounds-vanilla",
+  "title": "Void Undergrounds Vanilla",
+  "summary": "Allow vanilla underground belts and pipes to cross empty space while preserving their original range and lava restrictions. Requires Space Age.",
+  "category": "tweaks",
+  "tags": ["logistics", "fluids"],
+  "license": "default_mit",
+  "homepage": "https://github.com/gabrielbr1802gcc/factorio-void-undergrounds",
+  "source_url": "https://github.com/gabrielbr1802gcc/factorio-void-undergrounds",
+  "deprecated": false
+}

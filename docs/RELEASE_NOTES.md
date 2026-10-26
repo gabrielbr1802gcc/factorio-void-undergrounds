@@ -1,27 +1,35 @@
-Experimental release targeting **Factorio 2.0.77 + Space Age**.
+First public **0.1.0** release of Void Undergrounds Vanilla for
+**Factorio 2.0.77 + Space Age**.
 
-Removes only `empty_space` from the underground collision masks of the four
-vanilla underground belts and the vanilla pipe-to-ground's underground
-connections. Masks are copied first to avoid modifying shared tables.
-`lava_tile`, endpoint placement collisions, original ranges, speeds, and fluid
-properties are preserved. No new prototypes or runtime scripts are added.
+The user installed and tested the mod in that game version and confirmed that
+it works. This confirms general functionality; no specific results were supplied
+for every belt tier, individual belt/fluid scenarios, lava blocking, exact range
+boundaries, throughput, endpoint placement, or save/reload. Those detailed checks
+remain pending. The agent did not independently run Factorio.
 
-**Validation:** checked the official 2.0.77 source and prototype API, parsed and
-executed the Lua with standalone interpreters, tested representative prototype
-fixtures for unintended changes, and checked the installable ZIP's contents,
-integrity, and byte-for-byte build reproducibility. These are static/offline
-checks, not a Factorio engine test.
+The Lua implementation is unchanged from `v0.1.0-beta`: it removes only
+`empty_space` from the four vanilla underground belt masks and vanilla
+pipe-to-ground's underground connections. It preserves `lava_tile`, placement
+collision data, original range/speed fields, and other prototype properties.
+There are no added entities, recipes, technologies, runtime handlers, or
+scripted item/fluid transfers.
 
-**No in-game test was possible:** a compatible Factorio + Space Age executable
-was not available. Successful loading and actual transport across empty space
-are unconfirmed. Manual testing is still required for belts, fluids, normal
-range limits, lava blocking, invalid endpoint placement, and save/reload.
-See the README's manual test instructions and `docs/VALIDATION.md`.
+Updated the documentation to record the user report and its limits. Added
+homepage metadata, a Factorio changelog, and an English Mod Portal description
+with submission metadata and manual publication instructions. The Mod Portal
+submission is prepared; publication and mod-manager availability are pending
+Factorio.com authentication and subsequent verification.
 
-Download the attached **`void-undergrounds-vanilla_0.1.0.zip`** and copy it, still
-zipped, into a separate Factorio test profile's `mods` directory. Enable Space
-Age and the mod, then restart. Use a disposable game for initial validation.
-GitHub's automatic **Source code (zip)** and **Source code (tar.gz)** downloads
-are not the installable Factorio package.
+Automated checks were rerun: metadata and Lua syntax, 6 prototype regression
+cases under Lua 5.2.1 and LuaJIT, 4 official-reference verification groups, and
+ZIP contents, integrity and byte-for-byte build reproducibility. These checks
+remain distinct from the user's in-game report. See
+[VALIDATION.md](https://github.com/gabrielbr1802gcc/factorio-void-undergrounds/blob/v0.1.0/docs/VALIDATION.md).
 
-The mod version is `0.1.0`; `v0.1.0-beta` is this GitHub pre-release's tag.
+Download the attached **`void-undergrounds-vanilla_0.1.0.zip`**. Keep it zipped
+when copying it to your Factorio profile's `mods` folder. GitHub's automatic
+**Source code** archives are not the installable mod package.
+
+The internal mod version remains `0.1.0`. The historical `v0.1.0-beta` tag and
+its asset are preserved; `v0.1.0` identifies this public release without moving
+or replacing the beta tag.

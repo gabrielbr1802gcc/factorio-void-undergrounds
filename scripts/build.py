@@ -7,7 +7,7 @@ from pathlib import Path
 from zipfile import ZIP_STORED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parents[1]
-MOD_FILES = ("LICENSE", "README.md", "data-final-fixes.lua", "info.json")
+MOD_FILES = ("LICENSE", "README.md", "changelog.txt", "data-final-fixes.lua", "info.json")
 
 
 def build(output_dir):

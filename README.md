@@ -1,17 +1,21 @@
 # Void Undergrounds Vanilla
 
-Experimental Factorio **2.0.77 + Space Age** mod. It removes the `empty_space`
+Minimal Factorio **2.0.77 + Space Age** mod. It removes the `empty_space`
 layer from the underground connection masks of the four vanilla underground
-belts and vanilla pipe-to-ground. This is intended to let their underground
+belts and vanilla pipe-to-ground. This lets their underground
 connections cross gaps in a space platform within the original connection range.
 
-**Status: verified against the 2.0.77 API and with offline regression tests;
-not tested inside Factorio. In-game functionality is not yet confirmed.**
+**Status: the user installed and tested the mod in Factorio 2.0.77 + Space Age
+and confirmed that it works.** This is a report of general functionality, not
+an exhaustive test matrix. Specific coverage of lava, exact range boundaries,
+throughput, every belt tier, and save/reload has not been reported. Automated
+checks and the limits of the user report are recorded in
+[VALIDATION.md](https://github.com/gabrielbr1802gcc/factorio-void-undergrounds/blob/main/docs/VALIDATION.md).
 
 ## Installation
 
 1. Download **`void-undergrounds-vanilla_0.1.0.zip`** from the
-   [experimental release](https://github.com/gabrielbr1802gcc/factorio-void-undergrounds/releases/tag/v0.1.0-beta).
+   [0.1.0 release](https://github.com/gabrielbr1802gcc/factorio-void-undergrounds/releases/tag/v0.1.0).
    Choose the uploaded mod asset; GitHub's automatic **Source code** archives
    are not the installable package.
 2. With Factorio closed, copy that ZIP into the `mods` directory of the Factorio
@@ -21,7 +25,15 @@ not tested inside Factorio. In-game functionality is not yet confirmed.**
    must also be enabled.
 
 The ZIP contains a single root folder, `void-undergrounds-vanilla_0.1.0`, with
-`info.json`, `data-final-fixes.lua`, `README.md`, and `LICENSE` inside.
+`info.json`, `data-final-fixes.lua`, `README.md`, `changelog.txt`, and `LICENSE` inside.
+
+The first Factorio Mod Portal submission is prepared; publication and in-game
+mod-manager availability are still pending. The English listing, metadata, and
+manual submission instructions are in
+[docs/mod-portal](https://github.com/gabrielbr1802gcc/factorio-void-undergrounds/tree/main/docs/mod-portal).
+The GitHub pre-release `v0.1.0-beta` remains available as historical material.
+The stable `v0.1.0` release keeps the same Lua implementation and internal mod
+version, with updated documentation, homepage metadata, and a changelog.
 
 ## How it works
 
@@ -53,9 +65,10 @@ There are no added entities, recipes, technologies, settings, migrations,
 
 ## Limitations
 
-- No Factorio executable with Space Age was available for validation. Loading,
-  actual belt/fluid transfer, lava blocking, endpoint placement, and behavior
-  after save/reload still need in-game checks.
+- The user's confirmation covers general operation on 2.0.77 + Space Age.
+  Detailed belt/fluid scenarios, all tiers, lava blocking, exact range limits,
+  throughput measurements, endpoint placement, and save/reload remain pending
+  specific evidence. The agent has not run Factorio itself.
 - Prototype changes apply to these entity names on **all surfaces**. They cannot
   be scoped to platforms without additional machinery. Only `empty_space` is
   removed; this may also affect other tiles using that collision layer.
@@ -95,7 +108,8 @@ of lava, ranges, speeds and placement data, unchanged other prototypes, custom
 collision options, normal/linked pipe connections, missing data, and idempotence.
 Python checks metadata and ZIP structure, contents, CRCs, and reproducibility.
 Fixtures are not the Factorio loader or a transport simulation. See
-[validation details](docs/VALIDATION.md) for results and exact reference hashes.
+[validation details](https://github.com/gabrielbr1802gcc/factorio-void-undergrounds/blob/main/docs/VALIDATION.md)
+for results and exact reference hashes.
 
 An additional reference check downloads six pinned official files into a
 separate cache, verifies their SHA-256 hashes and API types, and executes the
@@ -117,6 +131,8 @@ and `docs/` are available in the source repository, outside the installable ZIP.
 Use a **separate test profile** and a fresh disposable Space Age game, with only
 the official mods and this mod enabled. Keep your normal mods directory and
 existing saves separate. Compare against the same setup with this mod disabled.
+The user has confirmed general operation; the checklist below remains available
+to document the individual scenarios that have not yet been specifically reported.
 
 1. Confirm the exact Factorio version and that startup reaches the menu without
    a prototype validation error.

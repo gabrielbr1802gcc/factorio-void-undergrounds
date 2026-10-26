@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "title": "Void Undergrounds Vanilla",
   "author": "gabrielbr1802gcc",
+  "homepage": "https://github.com/gabrielbr1802gcc/factorio-void-undergrounds",
   "description": "Allow vanilla underground belts and pipes to cross empty space while preserving their original range and lava restrictions. Requires Space Age.",
   "factorio_version": "2.0",
   "dependencies": [

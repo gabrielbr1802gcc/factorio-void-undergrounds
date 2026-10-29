@@ -5,12 +5,6 @@ layer from the underground connection masks of the four vanilla underground
 belts and vanilla pipe-to-ground. This lets their underground
 connections cross gaps in a space platform within the original connection range.
 
-**Status: the user installed and tested the mod in Factorio 2.0.77 + Space Age
-and confirmed that it works.** This is a report of general functionality, not
-an exhaustive test matrix. Specific coverage of lava, exact range boundaries,
-throughput, every belt tier, and save/reload has not been reported. Automated
-checks and the limits of the user report are recorded in
-[VALIDATION.md](https://github.com/gabrielbr1802gcc/factorio-void-undergrounds/blob/main/docs/VALIDATION.md).
 
 ## Installation
 

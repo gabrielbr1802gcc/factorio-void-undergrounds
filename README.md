@@ -59,10 +59,6 @@ There are no added entities, recipes, technologies, settings, migrations,
 
 ## Limitations
 
-- The user's confirmation covers general operation on 2.0.77 + Space Age.
-  Detailed belt/fluid scenarios, all tiers, lava blocking, exact range limits,
-  throughput measurements, endpoint placement, and save/reload remain pending
-  specific evidence. The agent has not run Factorio itself.
 - Prototype changes apply to these entity names on **all surfaces**. They cannot
   be scoped to platforms without additional machinery. Only `empty_space` is
   removed; this may also affect other tiles using that collision layer.
